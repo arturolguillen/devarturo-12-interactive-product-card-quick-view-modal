@@ -8,6 +8,8 @@ import ProductCard from "../components/ProductCard.astro";
 import ProductCardHeader from "../components/ProductCardHeader.astro";
 import ProductCardBadge from "../components/ProductCardBadge.astro";
 import ProductCardWishlistButton from "../components/ProductCardWishlistButton.astro";
+import ProductCardImageWrapper from "../components/ProductCardImageWrapper.astro";
+import ProductCardImage from "../components/ProductCardImage.astro";
 ---
 
 <Layout>
@@ -21,6 +23,9 @@ import ProductCardWishlistButton from "../components/ProductCardWishlistButton.a
 				<ProductCardBadge />
 				<ProductCardWishlistButton />
 			</ProductCardHeader>
+			<ProductCardImageWrapper>
+				<ProductCardImage />
+			</ProductCardImageWrapper>
 		</ProductCard>
 	</MainWrapper>
 </Layout>
