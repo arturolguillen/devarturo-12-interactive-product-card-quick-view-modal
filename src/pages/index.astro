@@ -3,6 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import HeaderLogo from "../components/HeaderLogo.astro";
 import HeaderNavigation from "../components/HeaderNavigation.astro";
+import MainWrapper from "../components/MainWrapper.astro";
+import ProductCard from "../components/ProductCard.astro";
+import ProductCardHeader from "../components/ProductCardHeader.astro";
+import ProductCardBadge from "../components/ProductCardBadge.astro";
+import ProductCardWishlistButton from "../components/ProductCardWishlistButton.astro";
 ---
 
 <Layout>
@@ -10,4 +15,12 @@ import HeaderNavigation from "../components/HeaderNavigation.astro";
 		<HeaderLogo />
 		<HeaderNavigation />
 	</Header>
+	<MainWrapper>
+		<ProductCard>
+			<ProductCardHeader>
+				<ProductCardBadge />
+				<ProductCardWishlistButton />
+			</ProductCardHeader>
+		</ProductCard>
+	</MainWrapper>
 </Layout>
