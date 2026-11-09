@@ -1,7 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import HeaderLogo from "../components/HeaderLogo.astro";
+import HeaderNavigation from "../components/HeaderNavigation.astro";
 ---
 
 <Layout>
-	<h1>Hello World</h1>
+	<Header>
+		<HeaderLogo />
+		<HeaderNavigation />
+	</Header>
 </Layout>
